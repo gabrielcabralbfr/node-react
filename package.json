@@ -1,0 +1,35 @@
+{
+   "name": "galaxy-traveler",
+   "version": "1.0.0",
+   "description": "A Node and React application",
+   "main": "index.js",
+   "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "ts-node src/index.ts"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/gabrielcabralbfr/galaxy-traveler.git"
+   },
+   "keywords": [],
+   "author": "",
+   "license": "ISC",
+   "bugs": {
+      "url": "https://github.com/gabrielcabralbfr/galaxy-traveler/issues"
+   },
+   "homepage": "https://github.com/gabrielcabralbfr/galaxy-traveler#readme",
+   "dependencies": {
+      "express": "^4.17.1",
+      "pg": "^8.5.1",
+      "reflect-metadata": "^0.1.10",
+      "typeorm": "0.2.29",
+      "mysql": "^2.14.1"
+   },
+   "devDependencies": {
+      "@types/express": "^4.17.9",
+      "@types/node": "^8.0.29",
+      "ts-node-dev": "^1.1.1",
+      "typescript": "3.3.3333",
+      "ts-node": "3.3.0"
+   }
+}
