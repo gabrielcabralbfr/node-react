@@ -4,15 +4,18 @@ import {Entity, PrimaryGeneratedColumn, Column} from "typeorm";
 export class Traveler {
 
     @PrimaryGeneratedColumn()
-    id: number;
+    id_traveler: number;
 
     @Column()
-    firstName: string;
+    email: string;
 
     @Column()
-    lastName: string;
+    nickname: string;
 
     @Column()
-    age: number;
+    avatar: string;
+
+    @Column()
+    password: string;
 
 }
