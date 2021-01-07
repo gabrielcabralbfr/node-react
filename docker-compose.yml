@@ -2,8 +2,7 @@ version: "3"
 
 services:
   pgsql:
-    build:
-      context: "./bin/postgres"
+    image: "postgres:9.6.1"
     container_name: "pgsql"
     restart: "always"
     ports:
