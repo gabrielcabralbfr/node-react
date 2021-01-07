@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  pgsql:
+    build:
+      context: "./bin/postgres"
+    container_name: "pgsql"
+    restart: "always"
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./data/pgsql:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: "gb"
+      POSTGRES_USER: "gb"
+      POSTGRES_DB: "galaxy_travelers_db"
