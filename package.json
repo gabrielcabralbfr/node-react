@@ -22,7 +22,11 @@
    },
    "homepage": "https://github.com/gabrielcabralbfr/galaxy-traveler#readme",
    "dependencies": {
+      "body-parser": "^1.19.0",
+      "cookie-session": "^1.4.0",
+      "dotenv": "^8.2.0",
       "express": "^4.17.1",
+      "jsonwebtoken": "^8.5.1",
       "pg": "^8.5.1",
       "reflect-metadata": "^0.1.10",
       "typeorm": "0.2.29"
@@ -30,8 +34,8 @@
    "devDependencies": {
       "@types/express": "^4.17.9",
       "@types/node": "^8.0.29",
+      "ts-node": "3.3.0",
       "ts-node-dev": "^1.1.1",
-      "typescript": "3.3.3333",
-      "ts-node": "3.3.0"
+      "typescript": "^4.1.3"
    }
 }
