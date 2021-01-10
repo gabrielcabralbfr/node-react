@@ -1,7 +1,6 @@
 import { Router } from "express";
 import { listAllGalaxiesController } from "./useCase/Galaxy";
 import { createTravelerController } from "./useCase/Traveler";
-import passport from 'passport';
 import { authController } from "./useCase/Auth";
 import { AuthMiddleware } from "./middleware/auth.middleware";
 
