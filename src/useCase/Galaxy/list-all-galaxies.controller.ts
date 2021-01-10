@@ -5,13 +5,11 @@ export class ListAllGalaxiesController {
     /**
      *
      */
-    constructor(private useCase: ListAllGalaxiesUseCase) {
+    constructor(private listAllGalaxiesUseCase: ListAllGalaxiesUseCase) {
 
     }
     async handle(request: Request, response: Response) {
-        const galaxies = await this.useCase.execute()
-
+        const galaxies = await this.listAllGalaxiesUseCase.execute()
         return response.status(200).json({ galaxies })
-
     }
 }

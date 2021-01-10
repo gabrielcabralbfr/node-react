@@ -5,9 +5,9 @@ import { ListAllGalaxiesUseCase } from "./list-all-galaxies.usecase";
 
 let listAllGalaxiesController
 createConnection().then((connection) => {
-    const repo = connection.getRepository(Galaxy)
-    const useCase = new ListAllGalaxiesUseCase(repo)
-    listAllGalaxiesController = new ListAllGalaxiesController(useCase)
+    const galaxyRepository = connection.getRepository(Galaxy)
+    const listAllGalaxiesUseCase = new ListAllGalaxiesUseCase(galaxyRepository)
+    listAllGalaxiesController = new ListAllGalaxiesController(listAllGalaxiesUseCase)
 })
 
 export { listAllGalaxiesController }

@@ -5,9 +5,9 @@ import { CreateTravelerUseCase } from "./create-traveler.usecase";
 let createTravelerController
 
 createConnection().then(connection => {
-    const repo = connection.getRepository(Traveler)
-    const useCase = new CreateTravelerUseCase(repo)
-    createTravelerController = new CreateTravelerController(useCase)
+    const travelerRepository = connection.getRepository(Traveler)
+    const createTravelerUseCase = new CreateTravelerUseCase(travelerRepository)
+    createTravelerController = new CreateTravelerController(createTravelerUseCase)
 
 })
 

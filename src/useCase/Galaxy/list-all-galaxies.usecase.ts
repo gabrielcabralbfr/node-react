@@ -5,9 +5,9 @@ export class ListAllGalaxiesUseCase {
     /**
      *
      */
-    constructor(private repository: Repository<Galaxy>) { }
+    constructor(private galaxyRepository: Repository<Galaxy>) { }
 
     async execute() {
-        return await this.repository.find()
+        return await this.galaxyRepository.find()
     }
 }

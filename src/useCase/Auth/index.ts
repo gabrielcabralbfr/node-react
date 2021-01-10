@@ -4,9 +4,9 @@ import { AuthController } from "./auth.controller";
 import { AuthUseCase } from "./auth.usecase";
 let authController
 createConnection().then(connection => {
-    const repo = connection.getRepository(Traveler)
-    const useCase = new AuthUseCase(repo)
-    authController = new AuthController(useCase)
+    const travelerRepository = connection.getRepository(Traveler)
+    const authUseCase = new AuthUseCase(travelerRepository)
+    authController = new AuthController(authUseCase)
 })
 
 export { authController }
