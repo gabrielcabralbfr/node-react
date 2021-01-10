@@ -1,4 +1,4 @@
-import { Connection, createConnection, getRepository } from "typeorm";
+import { createConnection, getRepository } from "typeorm";
 import { Traveler } from "../../entity/Traveler";
 import { CreateTravelerController } from "./create-traveler.controller";
 import { CreateTravelerUseCase } from "./create-traveler.usecase";

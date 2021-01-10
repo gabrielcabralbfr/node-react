@@ -5,14 +5,12 @@ import { Planet } from "./Planet";
 export class VideoConference {
 
     @PrimaryGeneratedColumn()
-    id_videoconference: number;
+    videoConferenceId: number;
 
     @Column()
     link: string;
     
-    @ManyToOne(() => Planet, planet => planet.galaxy, {
-        eager: true
-    })
+    @ManyToOne(() => Planet, planet => planet.galaxy)
     planet: Promise<Planet>;
 
 }
