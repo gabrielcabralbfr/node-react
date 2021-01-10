@@ -1,5 +1,6 @@
-import { Entity, PrimaryGeneratedColumn, Column, ManyToOne, JoinTable } from "typeorm";
+import { Entity, PrimaryGeneratedColumn, Column, ManyToOne, OneToOne } from "typeorm";
 import { Galaxy } from "./Galaxy";
+import { VideoConference } from "./VideoConference";
 
 @Entity()
 export class Planet {
@@ -11,9 +12,12 @@ export class Planet {
     name: string;
 
     @Column()
-    conference_link: string;
+    conferenceLink: string;
 
     @ManyToOne(() => Galaxy, galaxy => galaxy.planets)
     galaxy: Promise<Galaxy>;
+
+    @OneToOne(() => Planet, planet => planet.videoConference)
+    videoConference: VideoConference
 
 }
