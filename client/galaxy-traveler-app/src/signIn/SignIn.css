@@ -1,0 +1,44 @@
+.welcome {
+    text-align: left;
+    font: normal normal 300 36px/44px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    margin-top: 0;
+}
+
+.signin-box {
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 16px;
+    opacity: 0.9;
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    width: 608px;
+    /* height: 443px; */
+    /* box-sizing: border-box; */
+}
+
+.signin-container {
+    display: flex;
+    justify-content: center;
+}
+
+.gradient {
+    /* can be treated like a fallback */
+    /* background-color: #87488d;    */
+    /* will be "on top", if browser supports it */
+    background: radial-gradient(circle at center, #b22d80, #87488d);
+    /* these will reset other properties, like background-position, but it does know what you mean
+    background: #87488d;
+    background: radial-gradient(circle, #b22d80, #87488d,); */
+}
+
+label {
+    color: #fff;
+    margin-bottom: 10px;
+}
